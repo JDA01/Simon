@@ -58,7 +58,7 @@ function checkAnswer(currentLevel) {
        playSound("wrong");
         
         // CHANGE H1 TEXT TO GAME-OVER
-        $("h1").html("GAMEOVER! level reached " + level);
+        $("h1").html("GAMEOVER! level:" + level);
 
         // RESET GAME VALUES RESTART GAME
         startOver();
