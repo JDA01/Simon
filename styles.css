@@ -14,6 +14,7 @@ body {
   margin-bottom: 10%;
   line-height: 3rem;
   color: #FEF2BF;
+  text-transform: uppercase;
 }
 
 .container{
@@ -32,6 +33,27 @@ body {
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
+}
+
+.gameBtn {
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  outline: none;
+  margin: 2px;
+}
+
+.gameBtn:hover {
+  transform: scale(1.1);
+}
+
+.reset {
+  color: red;
+  border: 3px solid red;
+}
+
+.play {
+  color: blue;
+  border: 3px solid blue;
 }
 
 .game-over {
