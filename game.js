@@ -7,13 +7,15 @@
 // EVENT HANDLERS
 
 // LISTEN FOR KEYPRES
- $(document).on("keypress", function(){
+ $("#play").on("click", function(){
      if(!gameStarted){
         nextSequence();
         gameStarted = true;
      }
      
  });
+
+ $("#reset").on("click", reset);
 
  // LISTEN FOR BUTTON CLICK
  $(".btn").on("click", function(){
@@ -56,7 +58,7 @@ function checkAnswer(currentLevel) {
        playSound("wrong");
         
         // CHANGE H1 TEXT TO GAME-OVER
-        $("h1").html("GAMEOVER <br> press any to re-start");
+        $("h1").html("GAMEOVER! level reached " + level);
 
         // RESET GAME VALUES RESTART GAME
         startOver();
@@ -89,6 +91,16 @@ function startOver() {
     gamePattern = [];
     userClickedPattern = [];
     gameStarted  = false;
+    
+}
+
+// BUTTON RESET
+function reset() {
+    level = 0;
+    gamePattern = [];
+    userClickedPattern = [];
+    gameStarted  = false;
+    nextSequence();
 }
 
 // PLAY SOUND
