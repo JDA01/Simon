@@ -5,42 +5,38 @@
 body {
   text-align: center;
   background-color: #011F3F;
+  overflow: hidden;
 
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 10%;
   line-height: 3rem;
   color: #FEF2BF;
   text-transform: uppercase;
 }
 
-.container{
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-bottom: 10px;
+.container {
+  margin-top: 30%;
 }
-
 
 .btn {
   margin: 20px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   border: 10px solid black;
   border-radius: 20%;
 }
 
 .gameBtn {
-  padding: 2rem 3rem;
+  padding: 1rem 2rem;
   border-radius: 25px;
   outline: none;
-  margin: 2px;
+  margin: 3rem 0;
+  font-size: 2rem;
 }
 
 .gameBtn:hover {
@@ -87,5 +83,18 @@ body {
   #level-title {
     margin-bottom: 2%;
   }
-}
 
+  .container {
+    margin-top: 0%;
+  }
+
+  .btn {
+    height: 200px;
+    width: 200px;
+  }
+
+  .gameBtn {
+    margin: 0 1px;
+
+  }
+}
